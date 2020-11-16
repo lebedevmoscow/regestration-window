@@ -1,0 +1,55 @@
+// Arrow
+.arrow
+    border: solid #0880AE
+    border-width: 0 2px 2px 0
+    display: inline-block
+    padding: 3px
+    margin-bottom: 1px
+    position: absolute
+    top: 60%
+    right: 11px
+    transition: 0.3s all
+    transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+
+.dropdown__first
+    position: relative
+
+.up
+    transform: rotate(-135deg)
+    -webkit-transform: rotate(-135deg)
+
+.open
+    display: block !important
+
+.dropdown
+    font-family: 'IBM Plex Sans Regular', sans-serif
+    position: relative
+    span
+        margin-top: 10px
+        display: block
+        padding: 16px
+        cursor: pointer
+        border: 1px solid #DBE2EA
+        box-sizing: border-box
+        box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04)
+        border-radius: 6px
+    .dropdown__list
+        background: #FFFFFF
+        margin: 4px auto 0 auto
+        position: absolute
+        width: 100%
+        z-index: 10
+        ul
+            display: none
+            border: 1px solid #DBE2EA
+            box-sizing: border-box
+            box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04), 0px 20px 20px rgba(44, 39, 56, 0.04)
+            border-radius: 6px
+            li
+                padding: 24px 0 24px 16px
+                cursor: pointer
+                transition: 0.1s all
+                &:hover
+                    background-color: #EBF4F8
+                    color: #756F86
